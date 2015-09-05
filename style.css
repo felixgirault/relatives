@@ -1,0 +1,189 @@
+/**
+ *	Reset.
+ */
+
+html, body, input, p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #34495e;
+	color: #ecf0f1;
+	font-size: 112.5%;
+	line-height: 1.333em;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+
+/**
+ *	Header.
+ */
+
+.page-header,
+.page-footer {
+	padding: 2.666em;
+	font-family: Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+.page-title {
+	float: left;
+	margin: 0;
+	font-size: 2em;
+	line-height: 1.333em;
+}
+
+.options {
+	float: right;
+}
+
+.options label,
+.options input {
+	display: inline-block;
+	box-sizing: content-box;
+	padding: 0.5835em 1.333em;
+	font-family: Helvetica, 'Liberation Sans', FreeSans, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.333em;
+	height: 1.333em;
+}
+
+.options input {
+	border: none;
+	background: #ecf0f1;
+	color: #2c3e50;
+}
+
+.options input:focus {
+	outline: none;
+	border: none;
+	background: #fff;
+}
+
+.options label,
+input.options-apply {
+	background: #95a5a6;
+	color: #fff;
+}
+
+input.options-apply {
+	background: #1abc9c;
+}
+
+.options-list {
+	width: 24em;
+}
+
+.options-precision {
+	width: 2.666em;
+}
+
+
+
+/**
+ *	Page.
+ */
+
+.page {
+	font-family: Georgia, 'DejaVu Serif', Norasi, serif;
+}
+
+.scale {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.scale th {
+	padding: 1.333em 2.666em;
+}
+
+.scale td {
+	padding: 1.333em 2.666em;
+}
+
+.scale-pixels {
+	background: #2c3e50;
+	font-style: italic;
+}
+
+.scale-size {
+	cursor: pointer;
+}
+
+.scale-reference .scale-value {
+	font-weight: bold;
+}
+
+.scale-pixels {
+	border-bottom: 1px solid #34495e;
+	font-style: italic;
+}
+
+.scale-pixels .scale-unit {
+	color: #95a5a6;
+}
+
+.scale-ems {
+	border-bottom: 1px solid #ecf0f1;
+	background: #fff;
+	color: #2c3e50;
+}
+
+.scale-ems .scale-unit {
+	color: #7f8c8d;
+}
+
+.scale-size:hover .scale-pixels,
+.scale-reference .scale-pixels {
+	background: #34495e;
+}
+
+.scale-size:hover .scale-pixels {
+	border-bottom-color: #7f8c8d;
+}
+
+.scale-size.scale-reference .scale-pixels {
+	border-bottom-color: #c0392b;
+}
+
+.scale-size:hover .scale-ems,
+.scale-reference .scale-ems {
+	background: #ecf0f1;
+}
+
+.scale-size:hover .scale-ems {
+	border-bottom-color: #bdc3c7;
+}
+
+.scale-size.scale-reference .scale-ems {
+	border-bottom-color: #e74c3c;
+}
+
+
+
+/**
+ *	Footer.
+ */
+
+.page-footer {
+	/*text-align: right;*/
+}
+
+.page-footer a {
+	color: #fff;
+}

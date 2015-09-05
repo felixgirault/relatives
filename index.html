@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Relatives</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<header class="page-header">
+			<div class="clearfix">
+				<h1 class="page-title">Relatives</h1>
+
+				<form class="options">
+					<label for="list">Sizes</label><!--
+					--><input id="list" class="options-list" type="text" value="10,11,12,14,16,18,21,24,36,48,60,72" />
+
+					<label for="precision">Precision</label><!--
+					--><input id="precision" class="options-precision" type="number" value="3" min="1" />
+
+					<input class="options-apply" type="submit" value="Apply" />
+				</form>
+			</div>
+		</header>
+
+		<div class="page">
+			<table class="scale">
+				<thead>
+					<tr>
+						<th class="scale-pixels">Size in pixels</th>
+						<th class="scale-ems">Size in ems <span class="scale-unit">(relatively to the selected size in pixels)</span></th>
+					</tr>
+				</thead>
+
+				<tbody class="scale-sizes">
+
+				</tbody>
+			</table>
+		</div>
+
+		<footer class="page-footer">
+			<p>This tool should make your life easier when working with em units.</p>
+			<p>Select a size, and see how many ems you need to reach other sizes in the scale.</p>
+			<p>If you see a bug or think about improvements, you can <a href="https://github.com/felixgirault/relatives" title="See and fork this project on GitHub">see the code on GitHub</a>.</p>
+		</footer>
+
+		<script id="scale-size-template" type="text/template">
+			<tr class="scale-size" data-index="<%= index %>">
+				<td class="scale-pixels">
+					<span class="scale-value"><%= pixels %></span>
+					<span class="scale-unit">px</span>
+				</td>
+				<td class="scale-ems">
+					<span class="scale-value">0</span>
+					<span class="scale-unit">em</span>
+				</td>
+			</tr>
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+		<script src="scale.js"></script>
+	</body>
+</html>
